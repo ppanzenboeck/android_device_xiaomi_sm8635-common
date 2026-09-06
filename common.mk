@@ -378,3 +378,9 @@ $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 # Legacy Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
+
+# DerpFest Flags
+DERPFEST_BUILD_TYPE := Official 
+TARGET_SUPPORTS_QUICK_TAP := false
+DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
+
