@@ -369,4 +369,9 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/sm8635-common/keyboard/Vendor_15d9_Product_00a3.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_15d9_Product_00a3.idc
 
 # Remove Packages
-PRODUCT_PACKAGES += RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Legacy Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
