@@ -116,10 +116,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer3-V2-ndk.vendor \
     vendor.qti.hardware.display.composer3-V1-ndk.vendor
 
-# Dolby
-PRODUCT_PACKAGES += \
-    DolbyAtmos
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -374,6 +370,9 @@ PRODUCT_PACKAGES += \
 
 # GameBar Performance Overlay
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
+# Viper4Android
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Legacy Overlays
 DEVICE_PACKAGE_OVERLAYS += \
