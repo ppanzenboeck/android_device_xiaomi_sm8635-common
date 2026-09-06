@@ -367,3 +367,6 @@ $(call inherit-product, vendor/xiaomi/sm8635-common/sm8635-common-vendor.mk)
 # Xiaomi Keyboard Framework Layouts
 PRODUCT_COPY_FILES += \
     device/xiaomi/sm8635-common/keyboard/Vendor_15d9_Product_00a3.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_15d9_Product_00a3.idc
+
+# Remove Packages
+PRODUCT_PACKAGES += RemovePackages
