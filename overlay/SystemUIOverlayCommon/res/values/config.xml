@@ -25,4 +25,10 @@
 
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
     <integer name="config_keyguardRefreshRate">60</integer>
+
+    <!-- Whether device has a dual-cell battery architecture (Pad 7: 8850mAh single-cell) -->
+    <bool name="config_hasDualCellBattery">false</bool>
+
+    <!-- Whether OEM fast charge voltage and wattage should be doubled in software -->
+    <bool name="config_shouldDoubleFastChargeVoltage">false</bool>
 </resources>
