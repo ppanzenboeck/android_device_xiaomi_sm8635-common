@@ -13,7 +13,8 @@ persist.bluetooth.leaudio.notify.idle.during.call=true
 ro.bluetooth.leaudio_offload.supported=true
 
 # DPM
-persist.vendor.dpm.feature=11
+persist.vendor.dpm.feature=0
+persist.vendor.tcmd.feature=0
 
 # WFD
 vendor.wfdservice64=enable
