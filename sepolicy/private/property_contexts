@@ -18,6 +18,3 @@ persist.pen.events.disabled        u:object_r:system_pen_prop:s0
 persist.pen.pressure_scale         u:object_r:system_pen_prop:s0
 persist.pen.0g_activation          u:object_r:system_pen_prop:s0
 persist.pen.min_activation_pressure u:object_r:system_pen_prop:s0
-
-# Bootanimation
-ro.bootanim.set_orientation_        u:object_r:surfaceflinger_prop:s0 prefix string
