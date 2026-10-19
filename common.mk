@@ -386,3 +386,27 @@ $(call inherit-product, vendor/xiaomi/sm8635-common/sm8635-common-vendor.mk)
 # Xiaomi Keyboard Framework Layouts
 PRODUCT_COPY_FILES += \
     device/xiaomi/sm8635-common/keyboard/Vendor_15d9_Product_00a3.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_15d9_Product_00a3.idc
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# GameBar Performance Overlay
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
+# Viper4Android
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+# SELinux Treble Labeling
+PRODUCT_SELINUX_TREBLE_LABELING_TRACKING_LIST_FILE := \
+    device/xiaomi/sm8635-common/sepolicy/tracking_list.yaml
+PRODUCT_ENFORCE_SELINUX_TREBLE_LABELING := false
+
+# Legacy Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+# DerpFest Flags
+DERPFEST_BUILD_TYPE := Official
+TARGET_SUPPORTS_QUICK_TAP := false
+DERPFEST_VERSION_APPEND_TIME_OF_DAY := true

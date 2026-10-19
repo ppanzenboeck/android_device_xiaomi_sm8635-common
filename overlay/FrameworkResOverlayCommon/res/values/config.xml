@@ -547,4 +547,10 @@
          The duplication is necessary, because this information is used before the features are
          available to the system.-->
     <bool name="config_freeformWindowManagement">true</bool>
+
+    <!-- Xiaomi Fast Charging support (Mi Turbo Charge 45W) -->
+    <bool name="config_hasTurboPowerCharger">true</bool>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/quick_charge_type</string>
+    <string name="config_oemFastChargerStatusPath2" translatable="false">/sys/class/power_supply/battery/quick_charge_type</string>
+    <string name="config_oemFastChargerStatusValue" translatable="false">1,2,3,4</string>
 </resources>
