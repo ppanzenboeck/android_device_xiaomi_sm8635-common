@@ -1,0 +1,2 @@
+# Qualcomm Snapdragon Performance Manager (QSPM) HAL
+hal_client_domain(priv_app_36, vendor_hal_qspmhal)
